@@ -1,22 +1,26 @@
 package com.company;
 
 
-class factorial{
+class Factorial {
+
     long result = 1;
-    public factorial(int n){
-        for(long i = 1; i<=n; i++){
+
+    public Factorial(int n) {
+        for (long i = 1; i <= n; i++) {
             result *= i;
         }
 
     }
-    public long factoring(long x){
+
+    public long factoring(long x) {
         result = 1;
-        for(long i = 1; i<=x; i++){
+        for (long i = 1; i <= x; i++) {
             result *= i;
         }
         return result;
     }
-    public long getFactorial(){
+
+    public long getFactorial() {
         return result;
     }
 }
