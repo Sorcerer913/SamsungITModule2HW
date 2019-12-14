@@ -2,10 +2,9 @@ package com.company;
 
 public class Condition {
 
-    //String type0[];
-    private String type1[] = {" will ", " won't "};
+    private String type1[] = {" will ", " won't ", "'ll "};
     private String type2[] = {"ed ", " was ", " were "};
-    private String type3[] = {" had ", " has ", " have "};
+    private String type3[] = {" had ", " has ", " have ","'ve "};
 
     private boolean contains(String s, String[] array) {
         for (int i = 0; i < array.length; i++) {
@@ -14,7 +13,7 @@ public class Condition {
         return false;
     }
 
-    public byte conditionNumber(String s) {
+    public Object conditionNumber(String s) {
         String str = s.toLowerCase().replaceAll(",", " ");
         if (contains(str, type1)) return 1;
         if (contains(str, type2)) return 2;
