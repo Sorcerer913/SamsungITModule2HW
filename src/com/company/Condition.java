@@ -13,7 +13,7 @@ public class Condition {
         return false;
     }
 
-    public Object conditionNumber(String s) {
+    public byte conditionNumber(String s) {
         String str = s.toLowerCase().replaceAll(",", " ");
         if (contains(str, type1)) return 1;
         if (contains(str, type2)) return 2;
